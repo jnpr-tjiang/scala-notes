@@ -1,4 +1,4 @@
-Function and closure
+Function and Closure
 ---------------------
 
 **Free variable**
