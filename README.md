@@ -1,3 +1,20 @@
+Type class
+----------
+
+**Private primary constructor**
+```
+class Device private (
+  private val id: Int,
+  private val domainId: Int
+)
+```
+Private constructor can only be accessed within the class or its companion class
+```
+object Device {
+  def apply(id: Int, domainId: Int) = new Device(id, domainId)
+}
+```
+
 Function and Closure
 ---------------------
 
