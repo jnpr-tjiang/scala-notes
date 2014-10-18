@@ -7,6 +7,13 @@ java: `public void foo(String ... args)`
 
 scala: `def foo(args: String*)`
 
+To pass a list or array or other collection to `foo()`, scala supports a special syntax `list: _*`
+```
+scala> def echo(args: String*) = for (arg <- args) println(arg)
+scala> val list = List("Hello", "world")
+scala> echo(list: _*)
+```
+
 Type class
 ----------
 
