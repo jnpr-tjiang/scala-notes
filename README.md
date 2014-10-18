@@ -56,3 +56,15 @@ def makeIncreaser(more: Int) = (x: Int) => x + more
 val increaseByTen = makeIncreaser(10)
 increaseByTen(100) // returns 110
 ```
+**Named argments**
+```
+scala> def speed(distance: Float, time: Float): Float = distance / time
+scala> speed(time = 100, distance = 300)
+```
+Named arguments allows you to pass arguments to a function in any order
+
+**Defaults for function arguments**
+```
+scala> def speed(distance: Float = 100, time: Float): Float = distance / time
+```
+
