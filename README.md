@@ -1,3 +1,12 @@
+Scala <=> Java cheatsheet
+-------------------------
+
+**Repeated function parameters**
+
+java: `public void foo(String ... args)`
+
+scala: `def foo(args: String*)`
+
 Type class
 ----------
 
