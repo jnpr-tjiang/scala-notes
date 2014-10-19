@@ -68,3 +68,11 @@ Named arguments allows you to pass arguments to a function in any order
 scala> def speed(distance: Float = 100, time: Float): Float = distance / time
 ```
 
+**Tail recursion**
+
+A function is tail recursive if the only place the function calls itself is the last operation of the function.
+```
+def approximate(guess: Double): Double = 
+  if (isGoodEnough(guess) guess
+  else approximate(improve(guss))
+```
