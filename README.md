@@ -76,3 +76,13 @@ def approximate(guess: Double): Double =
   if (isGoodEnough(guess) guess
   else approximate(improve(guss))
 ```
+
+**By-name Parameter**
+When a function parameter is given a type starting with `=>`, it is called *by-name parameter*
+```
+def byNameAssert(implicit assertionEnabled: Boolean)(predicate: => Boolean) = 
+  if (assertionEnabled && !predicate())
+    throw new AssertionError
+    
+byNameAssert(5 > 3)
+```
