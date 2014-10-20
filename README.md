@@ -78,6 +78,7 @@ def approximate(guess: Double): Double =
 ```
 
 **By-name Parameter**
+
 When a function parameter is given a type starting with `=>`, it is called *by-name parameter*
 ```
 def byNameAssert(implicit assertionEnabled: Boolean)(predicate: => Boolean) = 
